@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class ScoreKeeper : MonoBehaviour
 {
-    [SerializeField] float pointsPerPickup;
+    [SerializeField] private float pointsPerPickup = 10;
 
     private float points;
 
