@@ -18,5 +18,6 @@ public class Coin : MonoBehaviour
     {
         ScoreKeeper.Instance.IncreaseScore();
         Destroy(gameObject);
+
     }
 }
