@@ -6,7 +6,8 @@ public class ScoreKeeper : MonoBehaviour
 {
     [SerializeField] private float pointsPerPickup = 10;
 
-    private float points = 0;
+    private float playerOnePoints = 0;
+    private float playerTwoPoints = 0;
 
     static private ScoreKeeper instance;
     static public ScoreKeeper Instance
@@ -17,11 +18,19 @@ public class ScoreKeeper : MonoBehaviour
         }
     }
 
-    public float Points
+    public float PlayerOnePoints
     {
         get
         {
-            return points;
+            return playerOnePoints;
+        }
+    }
+
+    public float PlayerTwoPoints
+    {
+        get
+        {
+            return playerTwoPoints;
         }
     }
 
@@ -30,8 +39,13 @@ public class ScoreKeeper : MonoBehaviour
         instance = this;
     }
 
-    public void IncreaseScore()
+    public void IncreaseScore1()
     {
-        points += pointsPerPickup;
+        playerOnePoints += pointsPerPickup;
+    }
+
+    public void IncreaseScore2()
+    {
+        playerTwoPoints += pointsPerPickup;
     }
 }
