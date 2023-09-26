@@ -11,7 +11,7 @@ public class UICanvas : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        score = transform.Find("Score").GetComponent<TextMeshProUGUI>();
+        score = transform.Find("Canvas/Score").GetComponent<TextMeshProUGUI>();
     }
 
     // Update is called once per frame

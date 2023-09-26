@@ -6,7 +6,7 @@ public class ScoreKeeper : MonoBehaviour
 {
     [SerializeField] private float pointsPerPickup = 10;
 
-    private float points;
+    private float points = 0;
 
     static private ScoreKeeper instance;
     static public ScoreKeeper Instance
